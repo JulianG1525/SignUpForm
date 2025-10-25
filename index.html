@@ -10,17 +10,18 @@
         <h1>Welcome to the Lloyd's Banking Group monthly employee survey!</h1>
         
     </header>
-    <p>Your feedback is paramount to us. This survey is designed to help us better understand your experiences, satisfaction, and ideas for improvement in our workplace.</p>
-    <p>The survey should take about 5–10 minutes to complete. Please answer each question honestly.</p>
-    <img src="https://dotyumzonirqv.cloudfront.net/publish/wp-content/uploads/2024/10/embedded219060281-1920x1080.jpg" alt="Lloyd's Banking Group banner">
+    <p>Your feedback is essential to us. This survey is designed to help us better understand your experiences, satisfaction, and ideas for improvement in our workplace. Please answer each question honestly — your responses will remain confidential and will be used only to improve our organization and work environment.</p>
+    <p>The survey should take about 5–10 minutes to complete.</p>
+    <img src="https://dotyumzonirqv.cloudfront.net/publish/wp-content/uploads/2024/10/embedded219060281-192x108.jpg" alt="Lloyd's Banking Group banner">
 
     <h2>Purpose of This Survey</h2>
-    <p>This design is supposed to help us achieve the following:</p>
+    <p>The purpose of this survey is to help us gain a clearer understanding of key areas within our organization and identify meaningful steps toward improvement.It is supposed to help us achieve the following;</p>
     <ul>
         <li>Figuring out the company's strengths in the workplace.</li>
-        <li>A better understanding of how employees feel about company communication</li>
+        <li>A better understanding of how employees feel about the manager's support</li>
         <li>Improved transparency between management and employees.</li>
         <li>A more connected and collaborative workplace.</li>
+        <li>Data-driven plans to improve our overall communication strategy.</li>
     </ul>
 
     <form action="https://script.google.com/macros/s/AKfycbz6cewkwC6P68-qotOokhBb_v1Zxr3aozRItX-rFramd4p_7R3XzwHLj7o1mN-6Okez/exec" method="post">
@@ -30,7 +31,7 @@
         </div>
         <div>
             <label for="employeeID">Please enter your employee Identification Number: </label>
-            <input id="employeeID" name="employeeNo" type="number" required> 
+            <input id="employeeID" name="employeeNo" type="number" required min="10000" max="99999"> 
         </div>
         <div>
             <label for="departmentSelector">Please select the department in which you work :</label>
@@ -46,49 +47,63 @@
         </div>
         <div>
             <p>How satisfied are you with the company's communication channels?</p>
+        </div>
+        <div></div>
             <input id="veryDissatisfied" type="radio" name="satisfactionLevel" value="VD">
             <label for="veryDissatisfied">Very Dissatisfied</label>
-
+        </div>
+        <div>
             <input id="dissatisfied" type="radio" name="satisfactionLevel" value="D">
             <label for="dissatisfied">Dissatisfied</label>
-
+        </div>
             <input id="neutral" type="radio" name="satisfactionLevel" value="N">
             <label for="neutral">Neutral</label>
-        
+        <div>
             <input id="satisfied" type="radio" name="satisfactionLevel" value="S">
             <label for="satisfied">Satisfied</label>
-
+        </div>
+        <div>
             <input id="verySatisfied" type="radio" name="satisfactionLevel" value="VS">
             <label for="verySatisfied">Very Satisfied</label>
         </div>
 
         <div>
             <p>How would you rate the quality of support you get from your supervisors(5 stars being the best help and 1 star being the least help)</p>
+        </div>
+        <div>
             <input id="fiveStar" type="radio" name="supportQuality" value="5*">
             <label for="fiveStar">5 STAR </label>
-
+        </div>
+        <div>
             <input id="fourStar" type="radio" name="supportQuality" value="4*">
             <label for="fourStar">4 STAR </label>
-
+        </div>
+        <div>
             <input id="threeStar" type="radio" name="supportQuality" value="3*">
             <label for="threeStar">3 STAR </label>
-
+        </div>
+        <div>
             <input id="twoStar" type="radio" name="supportQuality" value="2*">
             <label for="twoStar">2 STAR </label>
-
+        </div>
+        <div>
             <input id="oneStar" type="radio" name="supportQuality" value="1*">
             <label for="oneStar">1 STAR </label>     
         </div>
         <div>
             <p>On a scale of 1–10, how easy is it for you to reach/access your supervisor?</p>
-            <input id="supervisorAccess" type="number" name="managerAccess">
+            <input id="supervisorAccess" type="number" name="managerAccess" min="0" max="10">
+        </div>
+        <div>
+            <label for="suggestion">What’s one way we could make meetings more engaging and productive?</label>
+            <input id="suggestion" type="text" name="engagement" placeholder="Enter your suggestion here..." >
         </div>
         
         <button type="submit">Submit </button>
 
     </form>
     <footer>
-        <p>Thank you for taking our survey! Your feedback helps us improve communication across the company.</p>
+        <p>Thank you for taking our survey! Your feedback helps us improve operations across the company.</p>
     </footer>
 </body>
 </html>
